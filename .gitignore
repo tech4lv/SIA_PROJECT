@@ -1,0 +1,12 @@
+# MySQL runtime files and local database data
+docker/development/db_data/
+
+# Environment files containing local configuration or secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Dependencies and generated files
+node_modules/
+vendor/

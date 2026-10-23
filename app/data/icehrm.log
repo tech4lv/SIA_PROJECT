@@ -1,0 +1,11 @@
+[15-Aug-2026 09:36:04 Asia/Colombo] PHP Fatal error:  Uncaught Exception: Database is not connected in /var/www/html/core/lib/composer/vendor/icehrm/php-active-record/src/MyORM/MySqlActiveRecord.php:131
+Stack trace:
+#0 /var/www/html/core/lib/composer/vendor/icehrm/php-active-record/src/MyORM/MySqlActiveRecord.php(161): MyORM\MySqlActiveRecord->checkPreConditions()
+#1 /var/www/html/core/src/Model/BaseModel.php(354): MyORM\MySqlActiveRecord->Load()
+#2 /var/www/html/core/src/Classes/SettingsManager.php(115): Model\BaseModel->Load()
+#3 /var/www/html/core/server.includes.inc.php(105): Classes\SettingsManager->getSetting()
+#4 /var/www/html/core/crons/include.cron.php(11): include('/var/www/html/c...')
+#5 /var/www/html/core/crons/cron.php(9): include('/var/www/html/c...')
+#6 /var/www/html/app/cron.php(7): include('/var/www/html/c...')
+#7 {main}
+  thrown in /var/www/html/core/lib/composer/vendor/icehrm/php-active-record/src/MyORM/MySqlActiveRecord.php on line 131
